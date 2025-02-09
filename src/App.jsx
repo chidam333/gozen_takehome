@@ -88,10 +88,10 @@ function App() {
     <>
     <div className="main scroll-ele snap-y snap-mandatory h-screen overflow-y-scroll bg-stone-300">
       <section className="snap-start text-red bg-stone-300 h-[95vh] mb-[5vh] grid">
-        <fieldset className="place-items-center border-2 borderr-solid border-black my-20 mx-20">
+        <fieldset className="place-items-center border-2 borderr-solid border-black my-10 md:my-20 mx-5 md:mx-20-20 mx-5 md:mx-20">
           <legend className='mx-10 font-bold text-2xl'>Task 1</legend>
           <div className="custom-select text-xl font-bold"> custom select </div>
-          <div className="demo-code relative border-2 border-solid border-black w-[80%] h-[80%] mt-4 rounded-xl grid place-items-center">
+          <div className="demo-code relative border-2 border-solid border-black w-[90%] h-[80%] mt-4 rounded-xl grid place-items-center">
             <button className="switch absolute bg-black text-amber-200 rounded-tr-md border-l-6 border-b-6 border-amber-600 top-0 right-0 p-2 cursor-pointer" onClick={() => handleCodeView()}>
               { viewCode ? <span>Demo</span>:<span>Code</span>}
             </button>
@@ -105,12 +105,12 @@ function App() {
 />`}
             </SyntaxHighlighter>
             :
-            <div className="demo h-fit">
+            <div className="demo h-fit w-[60vw] sm:w-[40vw] md:w-[22vw]">
                 <Select
                       options={['first', 'second']}
                       onChange={handleSelectChange}
                       multiple={false}
-                      style={{ backgroundColor: '#ffe9c7', font: 'bold 16px Arial, sans-serif', padding: '5px', width:'22vw'}}
+                      style={{ backgroundColor: '#ffe9c7', font: 'bold 16px Arial, sans-serif', padding: '5px',width: "100%"}}
                   />
                   <p className="text-center">Selected Value: {selectedValue}</p>
               </div>
@@ -119,10 +119,10 @@ function App() {
         </fieldset>
       </section>
       <section className="snap-start text-black bg-stone-300 h-[95vh] mb-[5vh] grid">
-        <fieldset className="place-items-center border-2 borderr-solid border-black my-20 mx-20">
+        <fieldset className="place-items-center border-2 borderr-solid border-black my-10 md:my-20 mx-5 md:mx-20">
           <legend className='mx-10 font-bold text-2xl'>Task 2</legend>
           <div className="custom-select text-xl font-bold"> dynamic form </div>
-          <div className="demo-code relative border-2 border-solid border-black w-[80%] h-[80%] mt-4 rounded-xl grid place-items-center">
+          <div className="demo-code relative border-2 border-solid border-black w-[90%] h-[80%] mt-4 rounded-xl grid place-items-center">
             <button className="switch absolute bg-black text-amber-200 rounded-tr-md border-l-6 border-b-6 border-amber-600 top-0 right-0 p-2 cursor-pointer" onClick={() => handleCodeView()}>
               { viewCode ? <span>Demo</span>:<span>Code</span>}
             </button>
@@ -146,10 +146,10 @@ const formConfig = [
         </fieldset>
       </section>
       <section className="snap-start text-black bg-stone-300 h-[95vh] mb-[5vh] grid">
-        <fieldset className="place-items-center border-2 borderr-solid border-black my-20 mx-20">
+        <fieldset className="place-items-center border-2 borderr-solid border-black my-10 md:my-20 mx-5 md:mx-20">
           <legend className='mx-10 font-bold text-2xl'>Task 3</legend>
           <div className="custom-input text-xl font-bold"> custom input </div>
-          <div className="demo-code relative border-2 border-solid border-black w-[80%] h-[80%] mt-4 rounded-xl grid place-items-center">
+          <div className="demo-code relative border-2 border-solid border-black w-[90%] h-[80%] mt-4 rounded-xl grid place-items-center">
             <button className="switch absolute bg-black text-amber-200 rounded-tr-md border-l-6 border-b-6 border-amber-600 top-0 right-0 p-2 cursor-pointer" onClick={() => handleCodeView()}>
               { viewCode ? <span>Demo</span>:<span>Code</span>}
             </button>
@@ -187,10 +187,10 @@ const passwordChecker = (value) => {
         </fieldset>
       </section>
       <section className="snap-start text-black bg-stone-300 h-[95vh] mb-[5vh] grid">
-        <fieldset className="place-items-center border-2 borderr-solid border-black my-20 mx-20">
+        <fieldset className="place-items-center border-2 borderr-solid border-black my-10 md:my-20 mx-5 md:mx-20">
           <legend className='mx-10 font-bold text-2xl'>Task 4</legend>
           <div className="ff text-xl font-bold"> Flexible filter </div>
-          <div className="demo-code relative border-2 border-solid border-black w-[80%] h-[80%] mt-4 rounded-xl grid place-items-center">
+          <div className="demo-code relative border-2 border-solid border-black w-[90%] h-[80%] mt-4 rounded-xl grid place-items-center">
             <button className="switch absolute bg-black text-amber-200 rounded-tr-md border-l-6 border-b-6 border-amber-600 top-0 right-0 p-2 cursor-pointer" onClick={() => handleCodeView()}>
               { viewCode ? <span>Demo</span>:<span>Code</span>}
             </button>
@@ -203,7 +203,7 @@ const passwordChecker = (value) => {
 `}
             </SyntaxHighlighter>
             :
-            <div className="demo h-fit">
+            <div className="demo h-fit w-[95%] lg:w-[20%]">
               <FlexibleFilter
                 items={["chennai","mumbai","thanjavur","vellore"]}
               />
@@ -213,10 +213,10 @@ const passwordChecker = (value) => {
         </fieldset>
       </section>
       <section className="snap-start text-black bg-stone-300 h-[95vh] mb-[5vh] grid">
-        <fieldset className="place-items-center border-2 borderr-solid border-black my-20 mx-20">
+        <fieldset className="place-items-center border-2 borderr-solid border-black my-10 md:my-20 mx-5 md:mx-20">
           <legend className='mx-10 font-bold text-2xl'>Task 5</legend>
           <div className="modal text-xl font-bold"> custom modal </div>
-          <div className="demo-code relative border-2 border-solid border-black w-[80%] h-[80%] mt-4 rounded-xl grid place-items-center">
+          <div className="demo-code relative border-2 border-solid border-black w-[90%] h-[80%] mt-4 rounded-xl grid place-items-center">
             <button className="switch absolute bg-black text-amber-200 rounded-tr-md border-l-6 border-b-6 border-amber-600 top-0 right-0 p-2 cursor-pointer" onClick={() => handleCodeView()}>
               { viewCode ? <span>Demo</span>:<span>Code</span>}
             </button>
@@ -244,10 +244,10 @@ const passwordChecker = (value) => {
           content={`There is some content in it not much though`}
         ></Modal>
       <section className="snap-start text-black bg-stone-300 h-[95vh] mb-[5vh] grid">
-        <fieldset className="place-items-center border-2 borderr-solid border-black my-20 mx-20">
+        <fieldset className="place-items-center border-2 borderr-solid border-black my-10 md:my-20 mx-5 md:mx-20">
           <legend className='mx-10 font-bold text-2xl'>Task 6</legend>
           <div className="tab text-xl font-bold"> custom tab</div>
-          <div className="demo-code relative border-2 border-solid border-black w-[80%] h-[80%] mt-4 rounded-xl grid place-items-center">
+          <div className="demo-code relative border-2 border-solid border-black w-[90%] h-[80%] mt-4 rounded-xl grid place-items-center">
             <button className="switch absolute bg-black text-amber-200 rounded-tr-md border-l-6 border-b-6 border-amber-600 top-0 right-0 p-2 cursor-pointer" onClick={() => handleCodeView()}>
               { viewCode ? <span>Demo</span>:<span>Code</span>}
             </button>
@@ -272,10 +272,10 @@ const passwordChecker = (value) => {
         </fieldset>
       </section>
       <section className="snap-start text-black bg-stone-300 h-[95vh] mb-[5vh] grid">
-        <fieldset className="place-items-center border-2 borderr-solid border-black my-20 mx-20">
+        <fieldset className="place-items-center border-2 borderr-solid border-black my-10 md:my-20 mx-5 md:mx-20">
           <legend className='mx-10 font-bold text-2xl'>Task 7</legend>
           <div className="data-table text-xl font-bold"> data table </div>
-          <div className="demo-code relative border-2 border-solid border-black w-[80%] h-[80%] mt-4 rounded-xl grid place-items-center">
+          <div className="demo-code relative border-2 border-solid border-black w-[90%] h-[80%] mt-4 rounded-xl grid place-items-center">
             <button className="switch absolute bg-black text-amber-200 rounded-tr-md border-l-6 border-b-6 border-amber-600 top-0 right-0 p-2 cursor-pointer" onClick={() => handleCodeView()}>
               { viewCode ? <span>Demo</span>:<span>Code</span>}
             </button>
@@ -305,10 +305,10 @@ data = {[
         </fieldset>
       </section>
       <section className="snap-start text-black bg-stone-300 h-[95vh] mb-[5vh] grid">
-        <fieldset className="place-items-center border-2 borderr-solid border-black my-20 mx-20">
+        <fieldset className="place-items-center border-2 borderr-solid border-black my-10 md:my-20 mx-5 md:mx-20">
           <legend className='mx-10 font-bold text-2xl'>Task 8</legend>
-          <div className="carousel text-xl font-bold"> custom toast </div>
-          <div className="demo-code relative border-2 border-solid border-black w-[80%] h-[80%] mt-4 rounded-xl grid place-items-center">
+          <div className="toast text-xl font-bold"> custom toast </div>
+          <div className="demo-code relative border-2 border-solid border-black w-[90%] h-[80%] mt-4 rounded-xl grid place-items-center">
             <button className="switch absolute bg-black text-amber-200 rounded-tr-md border-l-6 border-b-6 border-amber-600 top-0 right-0 p-2 cursor-pointer" onClick={() => handleCodeView()}>
               { viewCode ? <span>Demo</span>:<span>Code</span>}
             </button>
@@ -347,10 +347,10 @@ const handleSuccess = () => {
         </fieldset>
       </section>
       <section className="snap-start text-black bg-stone-300 h-[95vh] mb-[5vh] grid">
-        <fieldset className="place-items-center border-2 borderr-solid border-black my-20 mx-20">
+        <fieldset className="place-items-center border-2 borderr-solid border-black my-10 md:my-20 mx-5 md:mx-20">
           <legend className='mx-10 font-bold text-2xl'>Task 9</legend>
           <div className="stepper text-xl font-bold"> custom stepper </div>
-          <div className="demo-code relative border-2 border-solid border-black w-[80%] h-[80%] mt-4 rounded-xl grid place-items-center">
+          <div className="demo-code relative border-2 border-solid border-black w-[90%] h-[80%] mt-4 rounded-xl grid place-items-center">
             <button className="switch absolute bg-black text-amber-200 rounded-tr-md border-l-6 border-b-6 border-amber-600 top-0 right-0 p-2 cursor-pointer" onClick={() => handleCodeView()}>
               { viewCode ? <span>Demo</span>:<span>Code</span>}
             </button>
@@ -375,10 +375,10 @@ const handleSuccess = () => {
         </fieldset>
       </section>
       <section className="snap-start text-black bg-stone-300 h-[95vh] mb-[5vh] grid">
-        <fieldset className="place-items-center border-2 borderr-solid border-black my-20 mx-20">
+        <fieldset className="place-items-center border-2 borderr-solid border-black my-10 md:my-20 mx-5 md:mx-20">
           <legend className='mx-10 font-bold text-2xl'>Task 10</legend>
           <div className="carousel text-xl font-bold"> custom carousel </div>
-          <div className="demo-code relative border-2 border-solid border-black w-[80%] h-[80%] mt-4 rounded-xl grid place-items-center">
+          <div className="demo-code relative border-2 border-solid border-black w-[90%] h-[80%] mt-4 rounded-xl grid place-items-center">
             <button className="switch absolute bg-black text-amber-200 rounded-tr-md border-l-6 border-b-6 border-amber-600 top-0 right-0 p-2 cursor-pointer" onClick={() => handleCodeView()}>
               { viewCode ? <span>Demo</span>:<span>Code</span>}
             </button>
@@ -390,10 +390,10 @@ const handleSuccess = () => {
 />`}
             </SyntaxHighlighter>
             :
-            <div className="demo grid place-items-center">
+            <div className="demo grid place-items-center w-[100%] sm:w-[65%] lg:w-[50%]">
               <Carousel 
                 images={["/thanjavur.jpg", "thanjavur2.jpg", "/thanjavur3.jpg", "hostel.jpg", "/home.jpg"]}
-                width="40vw"
+                width="100%"
               />
             </div>
             }
