@@ -1,0 +1,14 @@
+.active{
+    color: rgb(255, 213, 135);
+    background: black;
+    font-family: monospace;
+    border-bottom: 2px solid brown;
+}
+.tab-buttons{
+    font-family: monospace;
+}
+
+.tab-content{
+    font-family: monospace;
+    color: rgb(65, 41, 0);
+}
